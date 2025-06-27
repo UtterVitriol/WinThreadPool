@@ -1,0 +1,10 @@
+^C:\USERS\UTTERVITRIOL\SOURCE\REPOS\WINTHREADPOOL\OUT\DEBUG\CMAKEFILES\C25D693EF9DDF287A2BF0D22BA5D122C\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/uttervitriol/source/repos/WinThreadPool -BC:/Users/uttervitriol/source/repos/WinThreadPool/out/Debug --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/uttervitriol/source/repos/WinThreadPool/out/Debug/WinThreadPool.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
